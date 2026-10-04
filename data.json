@@ -122,5 +122,215 @@
     "threads": "",
     "note": "指油壓・SPA・美容工作室",
     "verified": "2026-10-04"
+  },
+  {
+    "name": "雨答按摩屋",
+    "category": [
+      "按摩"
+    ],
+    "city": "台北市",
+    "district": "地址預約後提供",
+    "address": "台北市（詳細地址請向工作室確認）",
+    "phone": "",
+    "line": "",
+    "instagram": "https://www.instagram.com/yuda_magicmassage/",
+    "threads": "https://www.threads.net/@yuda_magicmassage",
+    "note": "私訊 IG 預約・深層筋膜與細膩觸感按摩；社群帳號已由公開頁面確認",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "七號按摩師個人工作室",
+    "category": [
+      "按摩"
+    ],
+    "city": "台北市",
+    "district": "信義區",
+    "address": "台北市信義區忠孝東路五段733號2樓",
+    "phone": "",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "個人按摩工作室",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "Beautiful spa_美•工作室",
+    "category": [
+      "做臉",
+      "清粉刺"
+    ],
+    "city": "台北市",
+    "district": "大安區",
+    "address": "台北市大安區敦化南路一段233巷62號6樓C室",
+    "phone": "",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "美容護膚工作室",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "駐息｜專業頭皮養護・舒壓 Spa",
+    "category": [
+      "洗髮",
+      "頭皮SPA"
+    ],
+    "city": "台北市",
+    "district": "中山區",
+    "address": "台北市中山區新生北路一段100號1樓",
+    "phone": "0975-976-002",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "頭皮養護・舒壓 SPA",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "沐室 Musee",
+    "category": [
+      "做臉",
+      "清粉刺"
+    ],
+    "city": "台北市",
+    "district": "大安區",
+    "address": "台北市大安區敦化南路二段46號",
+    "phone": "",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "無痛清粉刺・手工清粉刺・臉部保養",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "Eve Studio",
+    "category": [
+      "做臉"
+    ],
+    "city": "台北市",
+    "district": "大同區",
+    "address": "台北市大同區南京西路57號7樓之1",
+    "phone": "02-2559-7169",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "韓式皮膚管理・美容做臉 SPA",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "森沐 SPA",
+    "category": [
+      "按摩",
+      "洗髮",
+      "做臉",
+      "頭皮SPA"
+    ],
+    "city": "台北市",
+    "district": "信義區",
+    "address": "台北市信義區光復南路417巷213號1樓",
+    "phone": "02-2732-1312",
+    "line": "https://line.me/R/ti/p/@sunspa",
+    "instagram": "",
+    "threads": "",
+    "note": "越式洗髮・按摩 SPA・臉部保養",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "丸美肌膚 台北中山旗艦店",
+    "category": [
+      "清粉刺",
+      "做臉"
+    ],
+    "city": "台北市",
+    "district": "大同區",
+    "address": "台北市大同區承德路一段68號6樓",
+    "phone": "02-7702-8892",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "韓式皮膚管理・清粉刺・美容",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "婷驛經絡按摩個人工作室",
+    "category": [
+      "按摩"
+    ],
+    "city": "台北市",
+    "district": "信義區",
+    "address": "台北市信義區吳興街284巷13弄2號1樓",
+    "phone": "0918-203-882",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "經絡按摩個人工作室",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "顏植所肌膚管理",
+    "category": [
+      "清粉刺",
+      "做臉"
+    ],
+    "city": "台北市",
+    "district": "大同區",
+    "address": "台北市大同區酒泉街123號2樓",
+    "phone": "02-2595-8335",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "無痛清粉刺・美容保養・肌膚管理",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "Camado",
+    "category": [
+      "清粉刺",
+      "做臉"
+    ],
+    "city": "台北市",
+    "district": "信義區",
+    "address": "台北市信義區光復南路505號10F-7",
+    "phone": "0928-547-080",
+    "line": "https://line.me/R/ti/p/@camado",
+    "instagram": "",
+    "threads": "",
+    "note": "手工清粉刺・全程手技・美容工作室",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "未來好好養護髮廊",
+    "category": [
+      "洗髮",
+      "頭皮SPA",
+      "做臉",
+      "清粉刺",
+      "按摩"
+    ],
+    "city": "台北市",
+    "district": "士林區",
+    "address": "台北市士林區福華路151號1樓",
+    "phone": "02-2838-1408",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "頭皮養護・洗髮・頭療・臉部美容",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "MAY SPA 越式洗髮 養生按摩",
+    "category": [
+      "洗髮",
+      "按摩",
+      "頭皮SPA"
+    ],
+    "city": "台北市",
+    "district": "中山區",
+    "address": "台北市中山區吉林路169號2樓",
+    "phone": "02-2563-0506",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "越式洗髮・養生按摩",
+    "verified": "2026-10-04"
   }
 ]
