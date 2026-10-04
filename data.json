@@ -412,5 +412,603 @@
     "googleReviewCount": null,
     "googleSource": "",
     "googleChecked": ""
+  },
+  {
+    "name": "好好艾自己，讓艾溫暖妳，溫罐按摩",
+    "category": [
+      "按摩"
+    ],
+    "city": "新北市",
+    "district": "新莊區",
+    "address": "新北市新莊區長生街8號3樓",
+    "phone": "",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "專屬女性的居家個人工作室・溫罐按摩",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "好蒔肌美學工作室",
+    "category": [
+      "清粉刺",
+      "做臉"
+    ],
+    "city": "新北市",
+    "district": "蘆洲區",
+    "address": "新北市蘆洲區長榮路15號2樓",
+    "phone": "0981-112-397",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "韓式皮膚管理・手工清粉刺・做臉",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "淨頭湯 Head Spa",
+    "category": [
+      "頭皮SPA",
+      "按摩"
+    ],
+    "city": "台北市",
+    "district": "中山區",
+    "address": "台北市中山區天祥路60巷17號1樓D室",
+    "phone": "",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "古法頭療・經絡疏通・頭皮養護・採預約制",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "石內可魔法占卜",
+    "category": [
+      "命理諮詢"
+    ],
+    "city": "台北市",
+    "district": "大安區",
+    "address": "台北市大安區忠孝東路四段97號2樓之19",
+    "phone": "0953-364-595",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "塔羅・占星等西方命理服務・可預約",
+    "verified": "2026-10-04",
+    "googleRating": 5.0,
+    "googleReviewCount": 299,
+    "googleChecked": "2026-10-04"
+  },
+  {
+    "name": "妤美人spa館",
+    "category": [
+      "按摩",
+      "做臉"
+    ],
+    "city": "台北市",
+    "district": "松山區",
+    "address": "台北市松山區南京東路五段399號13樓1301",
+    "phone": "0987-712-654",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "個人工作室・限女性",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "緒心玉健康美容會所",
+    "category": [
+      "頭皮SPA",
+      "做臉",
+      "按摩"
+    ],
+    "city": "新北市",
+    "district": "永和區",
+    "address": "新北市永和區得和路104巷20號1樓",
+    "phone": "0983-758-325",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "頭皮養護頭療・美容美體 SPA・採預約制",
+    "verified": "2026-10-04",
+    "googleRating": 5.0,
+    "googleReviewCount": 7,
+    "googleChecked": "2026-10-04"
+  },
+  {
+    "name": "許大方五術命理風水",
+    "category": [
+      "命理諮詢"
+    ],
+    "city": "新北市",
+    "district": "板橋區",
+    "address": "新北市板橋區中正路191號3樓",
+    "phone": "0928-559-555",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "紫微斗數・八字論命・命名・奇門遁甲・擇日",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "御身軒個人按摩工作室",
+    "category": [
+      "按摩"
+    ],
+    "city": "新北市",
+    "district": "三峽區",
+    "address": "新北市三峽區大同路88巷2號",
+    "phone": "",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "個人按摩工作室",
+    "verified": "2026-10-04",
+    "googleRating": 4.8,
+    "googleReviewCount": 5,
+    "googleChecked": "2026-10-04"
+  },
+  {
+    "name": "初韻美學館",
+    "category": [
+      "頭皮SPA"
+    ],
+    "city": "新北市",
+    "district": "三重區",
+    "address": "新北市三重區正義北路210號2樓",
+    "phone": "0958-514-188",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "頭皮護理・頭皮按摩・頭療・單次付費",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "吳素勤紫微命理館",
+    "category": [
+      "命理諮詢"
+    ],
+    "city": "台北市",
+    "district": "中山區",
+    "address": "台北市中山區行天宮地下道東邊8號",
+    "phone": "0905-903-130",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "紫微命理諮詢",
+    "verified": "2026-10-04",
+    "googleRating": 5.0,
+    "googleReviewCount": 178,
+    "googleChecked": "2026-10-04"
+  },
+  {
+    "name": "光光養生按摩個人工作室",
+    "category": [
+      "按摩"
+    ],
+    "city": "新北市",
+    "district": "板橋區",
+    "address": "新北市板橋區重慶路139巷18號3樓",
+    "phone": "0975-028-056",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "養生按摩個人工作室",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "KUMO 韓式皮膚管理",
+    "category": [
+      "清粉刺",
+      "做臉"
+    ],
+    "city": "新北市",
+    "district": "中和區",
+    "address": "新北市中和區景安路200巷7號2樓",
+    "phone": "",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "韓式皮膚管理・無痛清粉刺・女性經營・採預約制",
+    "verified": "2026-10-04",
+    "googleRating": 5.0,
+    "googleReviewCount": 69,
+    "googleChecked": "2026-10-04"
+  },
+  {
+    "name": "三重珮豐花園SPA美學館",
+    "category": [
+      "做臉",
+      "按摩",
+      "頭皮SPA"
+    ],
+    "city": "新北市",
+    "district": "三重區",
+    "address": "新北市三重區同安街135號1樓",
+    "phone": "0931-810-701",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "皮膚管理・SPA按摩・頭皮放鬆",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "步可思議的紫微命理",
+    "category": [
+      "命理諮詢"
+    ],
+    "city": "台北市",
+    "district": "松山區",
+    "address": "台北市松山區健康路",
+    "phone": "0919-990-713",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "紫微命理諮詢・採預約制",
+    "verified": "2026-10-04",
+    "googleRating": 5.0,
+    "googleReviewCount": 23,
+    "googleChecked": "2026-10-04"
+  },
+  {
+    "name": "文化PLUS美學",
+    "category": [
+      "清粉刺",
+      "做臉"
+    ],
+    "city": "台北市",
+    "district": "內湖區",
+    "address": "台北市內湖區新湖二路128號",
+    "phone": "0981-414-489",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "無痛清粉刺・韓式皮膚管理",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "簡宏勳命理風水學苑",
+    "category": [
+      "命理諮詢"
+    ],
+    "city": "台北市",
+    "district": "大安區",
+    "address": "台北市大安區忠孝東路四段142號9樓902室",
+    "phone": "0938-055-032",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "紫微斗數・命名・擇日・命理諮詢",
+    "verified": "2026-10-04",
+    "googleRating": 4.9,
+    "googleReviewCount": 100,
+    "googleChecked": "2026-10-04"
+  },
+  {
+    "name": "秀工作室",
+    "category": [
+      "清粉刺",
+      "做臉",
+      "按摩"
+    ],
+    "city": "新北市",
+    "district": "中和區",
+    "address": "新北市中和區景平路71-1號1樓",
+    "phone": "0986-696-585",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "美容・按摩・清粉刺",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "Refaces.studio 韓式皮膚管理",
+    "category": [
+      "做臉",
+      "清粉刺"
+    ],
+    "city": "台北市",
+    "district": "中山區",
+    "address": "台北市中山區德惠街16號4樓",
+    "phone": "0976-571-007",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "韓式皮膚管理・預約制美容工作室",
+    "verified": "2026-10-04",
+    "googleRating": 5.0,
+    "googleReviewCount": 5,
+    "googleChecked": "2026-10-04"
+  },
+  {
+    "name": "V Massage女性專屬按摩工作室",
+    "category": [
+      "按摩"
+    ],
+    "city": "台北市",
+    "district": "中山區",
+    "address": "台北市中山區林森北路306號4樓之6",
+    "phone": "",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "女性專屬按摩工作室・女性經營・採預約制",
+    "verified": "2026-10-04",
+    "googleRating": 5.0,
+    "googleReviewCount": 33,
+    "googleChecked": "2026-10-04"
+  },
+  {
+    "name": "歐吉塔羅占卜工作室",
+    "category": [
+      "命理諮詢"
+    ],
+    "city": "台北市",
+    "district": "大安區",
+    "address": "台北市大安區雲和街12號3樓",
+    "phone": "0901-155-901",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "塔羅占卜工作室",
+    "verified": "2026-10-04",
+    "googleRating": 5.0,
+    "googleReviewCount": 1,
+    "googleChecked": "2026-10-04"
+  },
+  {
+    "name": "陳楓螢 紫微斗數命理諮詢 台北分館",
+    "category": [
+      "命理諮詢"
+    ],
+    "city": "台北市",
+    "district": "中山區",
+    "address": "台北市中山區南京東路二段11號",
+    "phone": "0975-257-597",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "紫微斗數命理諮詢",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "33美容美體工作室",
+    "category": [
+      "做臉",
+      "清粉刺"
+    ],
+    "city": "新北市",
+    "district": "板橋區",
+    "address": "新北市板橋區民生路三段99號2樓",
+    "phone": "0916-420-206",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "板橋護膚・清粉刺・SPA",
+    "verified": "2026-10-04",
+    "googleRating": 5.0,
+    "googleReviewCount": 57,
+    "googleChecked": "2026-10-04"
+  },
+  {
+    "name": "Yeppeo.studio 韓式皮膚管理",
+    "category": [
+      "做臉",
+      "清粉刺"
+    ],
+    "city": "台北市",
+    "district": "中山區",
+    "address": "台北市中山區中山北路二段183巷4-1號2樓",
+    "phone": "",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "韓式皮膚管理工作室",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "靜敲敲按摩工作室",
+    "category": [
+      "按摩"
+    ],
+    "city": "新北市",
+    "district": "新莊區",
+    "address": "新北市新莊區中平路152巷47弄22號2樓",
+    "phone": "",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "全預約制・只接女性",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "Aveline塔羅占卜",
+    "category": [
+      "命理諮詢"
+    ],
+    "city": "新北市",
+    "district": "板橋區",
+    "address": "新北市板橋區民生路二段234巷",
+    "phone": "",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "塔羅占卜・板橋預約諮詢",
+    "verified": "2026-10-04",
+    "googleRating": 4.9,
+    "googleReviewCount": 48,
+    "googleChecked": "2026-10-04"
+  },
+  {
+    "name": "台北做臉／慧宇美學工作室",
+    "category": [
+      "做臉",
+      "清粉刺"
+    ],
+    "city": "台北市",
+    "district": "中山區",
+    "address": "台北市中山區新生北路三段43號2樓之14",
+    "phone": "0927-132-950",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "行動美容師・美容清粉刺・做臉",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "Yu Skincare 韓式皮膚管理",
+    "category": [
+      "做臉",
+      "清粉刺"
+    ],
+    "city": "台北市",
+    "district": "中山區",
+    "address": "台北市中山區新生北路三段25巷46號3樓",
+    "phone": "",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "韓式皮膚管理・預約制",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "原淨美學工作室",
+    "category": [
+      "清粉刺",
+      "做臉"
+    ],
+    "city": "新北市",
+    "district": "蘆洲區",
+    "address": "新北市蘆洲區長榮路15號2樓",
+    "phone": "0976-671-171",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "無痛清粉刺・美容工作室・預約制",
+    "verified": "2026-10-04",
+    "googleRating": 5.0,
+    "googleReviewCount": 32,
+    "googleChecked": "2026-10-04"
+  },
+  {
+    "name": "狐狸小姐占星工作室",
+    "category": [
+      "命理諮詢"
+    ],
+    "city": "台北市",
+    "district": "大安區",
+    "address": "台北市大安區羅斯福路三段273號10樓A室",
+    "phone": "",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "占星諮詢・全預約制・女性經營",
+    "verified": "2026-10-04",
+    "googleRating": 5.0,
+    "googleReviewCount": 11,
+    "googleChecked": "2026-10-04"
+  },
+  {
+    "name": "悠然 臉部放鬆護膚・撥筋工作室",
+    "category": [
+      "做臉"
+    ],
+    "city": "新北市",
+    "district": "板橋區",
+    "address": "新北市板橋區華江一路600號4樓",
+    "phone": "0935-566-378",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "臉部撥筋・臉部保養・護膚做臉・預約制",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "R&K美學",
+    "category": [
+      "做臉",
+      "清粉刺"
+    ],
+    "city": "新北市",
+    "district": "三重區",
+    "address": "新北市三重區三和路三段83巷12號2樓",
+    "phone": "",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "女士清粉刺・美容SPA・預約制",
+    "verified": "2026-10-04",
+    "googleRating": 4.9,
+    "googleReviewCount": 45,
+    "googleChecked": "2026-10-04"
+  },
+  {
+    "name": "JD時尚美學工作室",
+    "category": [
+      "清粉刺",
+      "做臉"
+    ],
+    "city": "新北市",
+    "district": "蘆洲區",
+    "address": "新北市蘆洲區中華路50號2樓",
+    "phone": "0983-982-223",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "無痛清粉刺・美體・預約制",
+    "verified": "2026-10-04",
+    "googleRating": 5.0,
+    "googleReviewCount": 52,
+    "googleChecked": "2026-10-04"
+  },
+  {
+    "name": "獨愛美學",
+    "category": [
+      "頭皮SPA",
+      "洗髮"
+    ],
+    "city": "新北市",
+    "district": "板橋區",
+    "address": "新北市板橋區文聖街89巷28號",
+    "phone": "0983-620-488",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "板橋頭療・越式洗髮",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "預約制・真善美美容坊 Harmony Skin Care",
+    "category": [
+      "做臉",
+      "清粉刺"
+    ],
+    "city": "台北市",
+    "district": "信義區",
+    "address": "台北市信義區嘉興街216巷14號1樓",
+    "phone": "0918-227-858",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "面皰肌膚調理・臉部保養・粉刺・預約制",
+    "verified": "2026-10-04"
+  },
+  {
+    "name": "Milk’s 花藝 × 芳療 × 藝術工作室",
+    "category": [
+      "做臉",
+      "清粉刺"
+    ],
+    "city": "台北市",
+    "district": "士林區",
+    "address": "台北市士林區士東路266巷16弄6號5樓",
+    "phone": "0987-964-852",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "無痛清粉刺・做臉・女性經營工作室",
+    "verified": "2026-10-04",
+    "googleRating": 5.0,
+    "googleReviewCount": 16,
+    "googleChecked": "2026-10-04"
   }
 ]
