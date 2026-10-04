@@ -10,7 +10,7 @@
 header{position:sticky;top:0;z-index:10;background:rgba(245,241,233,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .wrap{max-width:1100px;margin:auto;padding:20px}.brand{display:flex;justify-content:space-between;align-items:end;gap:16px}
 h1{font-family:Georgia,"Noto Serif TC",serif;font-size:clamp(28px,5vw,54px);font-weight:500;letter-spacing:-1px;margin:0}.eyebrow{font-size:11px;letter-spacing:3px;color:#777}
-.hero{padding:48px 0 24px}.hero p{max-width:620px;color:#666;line-height:1.8}
+.heroVisual{position:relative;margin:22px auto 0;max-width:1100px;height:390px;border-radius:32px;overflow:hidden;background:#eee7dc}.heroVisual img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}.heroVisual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(245,241,233,.02),rgba(245,241,233,.08))}.hero{padding:30px 0 24px}.hero p{max-width:620px;color:#666;line-height:1.8}
 .controls{display:grid;grid-template-columns:2fr 1fr auto;gap:10px;margin:22px 0}.search,select{width:100%;padding:15px 16px;border:1px solid var(--line);border-radius:18px;background:#fff;color:#333;font-size:15px;outline:none}.searchBtn{padding:15px 22px;border:0;border-radius:18px;background:#333;color:#fff;font-size:15px;cursor:pointer;white-space:nowrap}
 .chips{display:flex;gap:8px;overflow:auto;padding-bottom:8px}.chip{border:1px solid #c9c5be;background:transparent;border-radius:999px;padding:9px 15px;white-space:nowrap;cursor:pointer}.chip.active{background:#333;color:white;border-color:#333}
 .stats{display:flex;gap:18px;color:#777;font-size:12px;margin:18px 0 26px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
@@ -18,11 +18,12 @@ h1{font-family:Georgia,"Noto Serif TC",serif;font-size:clamp(28px,5vw,54px);font
 .top{display:flex;justify-content:space-between;gap:12px}.num{font:12px Georgia;color:#aaa}.card h2{font-size:19px;margin:8px 0 6px}.loc{font-size:13px;color:#777}.tags{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0}.tag{font-size:11px;padding:6px 9px;border-radius:999px;background:#efede8;border:1px solid #ddd9d1}
 .info{font-size:13px;line-height:1.7;color:#555}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:18px}.btn{display:inline-block;text-decoration:none;color:#333;border:1px solid #c8c8c8;background:#fafafa;border-radius:12px;padding:9px 11px;font-size:12px}.btn.primary{background:#d9dadd;border-color:#d9dadd}.disabled{opacity:.35;pointer-events:none}
 footer{padding:50px 0;color:#888;font-size:12px;line-height:1.7}.silver{color:#999}
-@media(max-width:700px){.wrap{padding:17px}.grid{grid-template-columns:1fr}.controls{grid-template-columns:1fr}.hero{padding-top:34px}.brand{align-items:start;flex-direction:column}.card{border-radius:20px}}
+@media(max-width:700px){.heroVisual{margin:14px 12px 0;height:285px;border-radius:24px}.heroVisual img{object-position:50% 15%}.wrap{padding:17px}.grid{grid-template-columns:1fr}.controls{grid-template-columns:1fr}.hero{padding-top:34px}.brand{align-items:start;flex-direction:column}.card{border-radius:20px}}
 </style>
 </head>
 <body>
 <header><div class="wrap brand"><div><div class="eyebrow">TAIPEI GIRLS MAP</div><h1>台北女子地圖</h1></div><div class="silver">TAIPEI × NEW TAIPEI</div></div></header>
+<section class="heroVisual"><img src="hero-cat-girl.png" alt="一隻巨大的手繪貓咪趴著睡覺，旁邊靠著一位小女孩"></section>
 <main class="wrap">
 <section class="hero"><div class="eyebrow">PRIVATE STUDIOS / BEAUTY & WELLNESS</div><p>把散落在城市裡的女子私藏工作室，放回一張好找的地圖。按摩、清粉刺、做臉、洗髮，一次收藏。</p></section>
 <div class="controls"><input id="q" class="search" placeholder="搜尋店名、區域、服務…"><select id="city"><option value="">台北＋新北</option><option>台北市</option><option>新北市</option></select><button id="searchBtn" class="searchBtn">搜尋</button></div>
