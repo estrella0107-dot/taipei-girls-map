@@ -332,5 +332,85 @@
     "threads": "",
     "note": "越式洗髮・養生按摩",
     "verified": "2026-10-04"
+  },
+  {
+    "name": "映蟬塔羅工作室",
+    "category": [
+      "塔羅占卜"
+    ],
+    "city": "台北市",
+    "district": "萬華區",
+    "address": "台北市萬華區武昌街二段72-8號",
+    "phone": "",
+    "line": "https://lin.ee/xa4uJrk",
+    "instagram": "",
+    "threads": "",
+    "note": "採預約制・現場一對一塔羅占卜",
+    "verified": "2026-10-04",
+    "sourceUrl": "https://yingchantarot.tw66.com.tw/",
+    "googleRating": null,
+    "googleReviewCount": null,
+    "googleSource": "",
+    "googleChecked": ""
+  },
+  {
+    "name": "女巫的塔羅‧芳療",
+    "category": [
+      "塔羅占卜"
+    ],
+    "city": "台北市",
+    "district": "中山區",
+    "address": "台北市中山區新生北路一段76巷5號1樓",
+    "phone": "",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "個人工作室・塔羅占卜與芳療服務，採預約制",
+    "verified": "2026-10-04",
+    "sourceUrl": "https://www.claudia-studio.com/services",
+    "googleRating": null,
+    "googleReviewCount": null,
+    "googleSource": "",
+    "googleChecked": ""
+  },
+  {
+    "name": "空白心靈空間",
+    "category": [
+      "塔羅占卜"
+    ],
+    "city": "新北市",
+    "district": "三重區",
+    "address": "新北市三重區同安街63號1樓",
+    "phone": "",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "個人塔羅占卜與晤談・採預約制",
+    "verified": "2026-10-04",
+    "sourceUrl": "https://www.blanc-tarot.com/",
+    "googleRating": null,
+    "googleReviewCount": null,
+    "googleSource": "",
+    "googleChecked": ""
+  },
+  {
+    "name": "Mini Many 療癒小宇宙",
+    "category": [
+      "塔羅占卜"
+    ],
+    "city": "新北市",
+    "district": "新店區",
+    "address": "新北市新店區北新路二段113號2樓",
+    "phone": "02-2915-5155",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "note": "個人身心靈工作室・提供塔羅占卜與牌卡服務",
+    "verified": "2026-10-04",
+    "sourceUrl": "https://minimany.studio/",
+    "googleRating": null,
+    "googleReviewCount": null,
+    "googleSource": "",
+    "googleChecked": ""
   }
 ]
