@@ -32,12 +32,22 @@ footer{padding:42px 0;color:#8a817b;font-size:11px}
 <div class="chips" id="chips"><button class="chip active" data-cat="">▦ 全部店家</button><button class="chip" data-cat="按摩">按摩</button><button class="chip" data-cat="清粉刺">清粉刺</button><button class="chip" data-cat="做臉">做臉</button><button class="chip" data-cat="洗髮">洗髮</button><button class="chip" data-cat="頭皮SPA">頭皮 SPA</button><button class="chip" data-cat="命理諮詢">命理諮詢</button></div>
 <div class="filters"><input id="q" placeholder="搜尋店家、區域、服務、口碑標籤…"><select id="city"><option value="">台北＋新北</option><option>台北市</option><option>新北市</option></select></div><div class="stats" id="count"></div><section class="grid" id="grid"></section>
 <footer>台北女子地圖整理店家公開商業資訊與可辨識來源的社群推薦摘要。地址、營業狀態與預約資訊可能變動，前往前請再次向店家確認。</footer></main>
-<div class="modal" id="modal"><div class="sheet"><div class="sheetTop"><div><b>分享你的真實體驗</b><div id="shop" class="loc"></div></div><button class="close" id="close">×</button></div><div class="stars" id="stars"><button class="star" data-star="1">★</button><button class="star" data-star="2">★</button><button class="star" data-star="3">★</button><button class="star" data-star="4">★</button><button class="star" data-star="5">★</button></div><div class="reviewTags" id="rtags"><button class="reviewTag">不推銷</button><button class="reviewTag">手法很好</button><button class="reviewTag">環境舒服</button><button class="reviewTag">價格合理</button><button class="reviewTag">女性友善</button><button class="reviewTag">預約方便</button><button class="reviewTag">會再訪</button></div><textarea id="reviewText" maxlength="200" placeholder="分享一句心得（選填，最多 200 字）"></textarea><button class="submit" id="submit">送出評價</button><div class="loc" style="margin-top:8px">體驗版：評價暫存在這台裝置並立即顯示在店家卡片；正式公開前將接上共用資料庫與審核。</div></div></div>
+<div class="modal" id="modal"><div class="sheet"><div class="sheetTop"><div><b>分享你的真實體驗</b><div id="shop" class="loc"></div></div><button class="close" id="close">×</button></div><div class="stars" id="stars"><button class="star" data-star="1">★</button><button class="star" data-star="2">★</button><button class="star" data-star="3">★</button><button class="star" data-star="4">★</button><button class="star" data-star="5">★</button></div><div class="reviewTags" id="rtags"><button class="reviewTag">不推銷</button><button class="reviewTag">手法很好</button><button class="reviewTag">環境舒服</button><button class="reviewTag">價格合理</button><button class="reviewTag">女性友善</button><button class="reviewTag">預約方便</button><button class="reviewTag">會再訪</button></div><textarea id="reviewText" maxlength="200" placeholder="分享一句心得（選填，最多 200 字）"></textarea><button class="submit" id="submit">送出評價</button><div class="loc" style="margin-top:8px">送出後會先進入待審核；審核通過後，才會公開顯示在店家資訊中。</div></div></div>
 <script>
-let data=[],cat="",moodCats=[],reviewShop="",reviewStars=0;
+let data=[],cat="",moodCats=[],reviewShop="",reviewStars=0,publicReviews=[];
+const SUPABASE_REST="https://chbpmyetehkrtwcxeyza.supabase.co/rest/v1";
+const SUPABASE_KEY="sb_publishable_Y0azh-7_KR8td0aTTqkJ4A_x724kQYj";
+const SB_HEADERS={"apikey":SUPABASE_KEY,"Authorization":"Bearer "+SUPABASE_KEY};
 const esc=s=>String(s||"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
-function getReviews(){try{return JSON.parse(localStorage.getItem("tgm_reviews")||"[]")}catch(e){return []}}
-function shopReviews(name){return getReviews().filter(r=>r.shop===name)}
+function shopReviews(name){return publicReviews.filter(r=>r.shop_name===name)}
+async function loadPublicReviews(){
+  try{
+    const r=await fetch(SUPABASE_REST+"/reviews?select=id,shop_name,stars,tags,review_text,created_at&order=created_at.asc",{headers:SB_HEADERS});
+    if(!r.ok)throw new Error(await r.text());
+    publicReviews=await r.json();
+    render();
+  }catch(e){console.error("Reviews load failed",e)}
+}
 function reviewBlock(name){
   const rs=shopReviews(name); if(!rs.length)return `<div class="rating"><span>✦ 台北女子評價</span><b>尚待累積</b></div>`;
   const avg=rs.reduce((s,r)=>s+Number(r.stars||0),0)/rs.length;
@@ -46,10 +56,10 @@ function reviewBlock(name){
 function latestReview(name){
   const rs=shopReviews(name); if(!rs.length)return "";
   const r=rs[rs.length-1];
-  return `<div class="community userReview"><div class="reviewMeta"><b>最新女子口碑</b><span class="reviewStars">${"★".repeat(r.stars)}${"☆".repeat(5-r.stars)}</span></div>${r.text?`「${esc(r.text)}」`:""}${r.tags?.length?`<div class="miniTags">${r.tags.map(t=>`<span class="miniTag">#${esc(t)}</span>`).join("")}</div>`:""}</div>`;
+  return `<div class="community userReview"><div class="reviewMeta"><b>最新女子口碑</b><span class="reviewStars">${"★".repeat(r.stars)}${"☆".repeat(5-r.stars)}</span></div>${r.review_text?`「${esc(r.review_text)}」`:""}${r.tags?.length?`<div class="miniTags">${r.tags.map(t=>`<span class="miniTag">#${esc(t)}</span>`).join("")}</div>`:""}</div>`;
 }
 function render(){let qv=document.querySelector("#q").value.trim().toLowerCase(),cityv=document.querySelector("#city").value;let rows=data.filter(x=>(!cityv||x.city===cityv)&&(!cat||x.category.includes(cat))&&(!moodCats.length||moodCats.some(c=>x.category.includes(c)))&&(!qv||JSON.stringify(x).toLowerCase().includes(qv)));count.textContent=`共 ${rows.length} 間店家`;grid.innerHTML=rows.map(x=>`<article class="card"><h2>${esc(x.name)}</h2><div class="loc">📍 ${esc(x.city)} ${esc(x.district)}・${esc(x.address)}</div><div class="tags">${x.category.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}${(x.tags||[]).map(t=>`<span class="tag vibe">#${esc(t)}</span>`).join("")}</div>${x.communityReview?`<div class="community"><b>女子口碑</b>「${esc(x.communityReview)}」</div>`:""}${latestReview(x.name)}<div class="ratings">${reviewBlock(x.name)}<div class="rating google"><span>Google 評價</span>${Number.isFinite(x.googleRating)&&x.googleReviewCount>0?`<b>⭐ ${x.googleRating.toFixed(1)} <small>(${x.googleReviewCount} 則)</small></b>`:`<b>尚無可驗證評分</b>`}</div></div><div class="info">${esc(x.note||"")}</div><div class="socials">${x.instagram?`<a class="socialBtn" target="_blank" rel="noopener" href="${esc(x.instagram)}">Instagram</a>`:""}${x.threads?`<a class="socialBtn" target="_blank" rel="noopener" href="${esc(x.threads)}">Threads</a>`:""}${x.line?`<a class="socialBtn" target="_blank" rel="noopener" href="${esc(x.line)}">LINE</a>`:""}${x.sourceUrl?`<a class="socialBtn" target="_blank" rel="noopener" href="${esc(x.sourceUrl)}">官方資訊</a>`:""}</div><div class="actions"><button class="btn rate" data-shop="${esc(x.name)}">☆ 我要評價</button>${x.bookingUrl?`<a class="btn primary" target="_blank" href="${esc(x.bookingUrl)}">立即預約</a>`:""}<a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(x.address)}">看地圖</a></div></article>`).join("")}
-fetch("data.json?v=20261005-ugc2",{cache:"no-store"}).then(r=>r.json()).then(x=>{data=Array.isArray(x)?x:[];cat="";moodCats=[];q.value="";city.value="";document.querySelectorAll(".chip,.mood").forEach(el=>el.classList.remove("active"));document.querySelector('.chip[data-cat=""]').classList.add("active");render()}).catch(()=>{count.textContent="店家資料載入失敗，請重新整理頁面"});
+fetch("data.json?v=20261005-ugc2",{cache:"no-store"}).then(r=>r.json()).then(x=>{data=Array.isArray(x)?x:[];cat="";moodCats=[];q.value="";city.value="";document.querySelectorAll(".chip,.mood").forEach(el=>el.classList.remove("active"));document.querySelector('.chip[data-cat=""]').classList.add("active");render();loadPublicReviews()}).catch(()=>{count.textContent="店家資料載入失敗，請重新整理頁面"});
 q.addEventListener("input",render);city.addEventListener("change",render);
 chips.addEventListener("click",e=>{let b=e.target.closest("[data-cat]");if(!b)return;cat=b.dataset.cat;moodCats=[];document.querySelectorAll(".chip,.mood").forEach(x=>x.classList.remove("active"));b.classList.add("active");render()});
 moods.addEventListener("click",e=>{let b=e.target.closest(".mood");if(!b)return;moodCats=b.dataset.cats.split("|");cat="";document.querySelectorAll(".chip,.mood").forEach(x=>x.classList.remove("active"));b.classList.add("active");render()});
@@ -59,5 +69,20 @@ function closeReview(){modalEl.classList.remove("open");document.body.style.over
 closeBtn.addEventListener("click",closeReview);modalEl.addEventListener("click",e=>{if(e.target===modalEl)closeReview()});document.addEventListener("keydown",e=>{if(e.key==="Escape"&&modalEl.classList.contains("open"))closeReview()});
 starsEl.addEventListener("click",e=>{let b=e.target.closest(".star");if(!b)return;reviewStars=Number(b.dataset.star);starsEl.querySelectorAll(".star").forEach(x=>x.classList.toggle("on",Number(x.dataset.star)<=reviewStars))});
 tagsEl.addEventListener("click",e=>{let b=e.target.closest(".reviewTag");if(b)b.classList.toggle("on")});
-submitBtn.addEventListener("click",()=>{if(!reviewStars)return alert("請先選擇 1–5 顆星");try{let a=getReviews();a.push({shop:reviewShop,stars:reviewStars,tags:[...tagsEl.querySelectorAll(".reviewTag.on")].map(x=>x.textContent),text:reviewTextEl.value.trim(),createdAt:new Date().toISOString(),status:"local"});localStorage.setItem("tgm_reviews",JSON.stringify(a));closeReview();render();alert("謝謝你的分享！評價已顯示在這台裝置的店家資訊中。")}catch(err){alert("目前無法儲存評價，請稍後再試。")}})
+submitBtn.addEventListener("click",async()=>{
+  if(!reviewStars)return alert("請先選擇 1–5 顆星");
+  submitBtn.disabled=true; submitBtn.textContent="送出中…";
+  try{
+    const payload={shop_name:reviewShop,stars:reviewStars,tags:[...tagsEl.querySelectorAll(".reviewTag.on")].map(x=>x.textContent),review_text:reviewTextEl.value.trim()||null,status:"pending"};
+    const r=await fetch(SUPABASE_REST+"/reviews",{method:"POST",headers:{...SB_HEADERS,"Content-Type":"application/json","Prefer":"return=minimal"},body:JSON.stringify(payload)});
+    if(!r.ok)throw new Error(await r.text());
+    closeReview();
+    alert("謝謝你的分享！評價已送出，審核通過後就會公開顯示。");
+  }catch(err){
+    console.error(err);
+    alert("目前無法送出評價，請稍後再試。");
+  }finally{
+    submitBtn.disabled=false; submitBtn.textContent="送出評價";
+  }
+})
 </script></body></html>
