@@ -28,7 +28,13 @@
     "instagram": "",
     "threads": "",
     "note": "完全預約制・個人工作室・一對一服務",
-    "verified": "2026-10-04"
+    "verified": "2026-10-04",
+    "tags": [
+      "個人工作室",
+      "一對一",
+      "完全預約制"
+    ],
+    "bookingUrl": "https://line.me/R/ti/p/@dvd0371v"
   },
   {
     "name": "Maggie’s Studio",
@@ -136,7 +142,15 @@
     "instagram": "https://www.instagram.com/yuda_magicmassage/",
     "threads": "https://www.threads.net/@yuda_magicmassage",
     "note": "私訊 IG 預約・深層筋膜與細膩觸感按摩；社群帳號已由公開頁面確認",
-    "verified": "2026-10-04"
+    "verified": "2026-10-04",
+    "tags": [
+      "個人工作室",
+      "預約制",
+      "深層筋膜"
+    ],
+    "communityReview": "社群公開資訊提到深層筋膜與細膩觸感按摩，採 IG 私訊預約。",
+    "reviewSourceLabel": "店家公開社群",
+    "bookingUrl": "https://www.instagram.com/yuda_magicmassage/"
   },
   {
     "name": "七號按摩師個人工作室",
@@ -1029,7 +1043,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 三重加盟店",
@@ -1049,7 +1071,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 板橋府中店",
@@ -1069,7 +1099,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 中和南勢角店",
@@ -1089,7 +1127,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 土城店",
@@ -1109,7 +1155,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 永和店",
@@ -1129,7 +1183,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 新莊迴龍店",
@@ -1149,7 +1211,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 林口店",
@@ -1169,7 +1239,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 蘆洲加盟店",
@@ -1189,7 +1267,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 新店加盟店",
@@ -1209,7 +1295,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 樹林加盟店",
@@ -1229,7 +1323,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 三峽加盟店",
@@ -1249,7 +1351,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 汐止店",
@@ -1269,7 +1379,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 中和環球店",
@@ -1289,7 +1407,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 中正汀州店",
@@ -1309,7 +1435,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 信義吳興店",
@@ -1329,7 +1463,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 松山饒河店",
@@ -1349,7 +1491,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 中山德惠店",
@@ -1369,7 +1519,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 士林延平加盟店",
@@ -1389,7 +1547,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 北投加盟店",
@@ -1409,7 +1575,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 木柵店",
@@ -1429,7 +1603,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "只想洗髮 萬華店",
@@ -1449,7 +1631,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "只洗髮",
+      "晚上營業",
+      "不推銷",
+      "不儲值"
+    ],
+    "communityReview": "適合晚上臨時只想洗頭、不想做其他髮型服務的情境。",
+    "reviewSourceLabel": "店家公開資訊＋社群推薦摘要"
   },
   {
     "name": "明易足體按摩 東門旗艦館",
@@ -1469,7 +1659,16 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "運動按摩",
+      "LINE預約",
+      "指壓",
+      "足部按摩"
+    ],
+    "communityReview": "社群推薦提到預約方便、偏運動按摩取向，按腳與身體皆可選擇。",
+    "reviewSourceLabel": "社群推薦摘要",
+    "bookingUrl": "https://mingyi.tw/booking"
   },
   {
     "name": "明易足體按摩 新店創始館",
@@ -1489,7 +1688,16 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "運動按摩",
+      "LINE預約",
+      "指壓",
+      "足部按摩"
+    ],
+    "communityReview": "社群推薦提到預約方便、偏運動按摩取向，按腳與身體皆可選擇。",
+    "reviewSourceLabel": "社群推薦摘要",
+    "bookingUrl": "https://mingyi.tw/booking"
   },
   {
     "name": "明易足體按摩 華山館",
@@ -1509,7 +1717,16 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "運動按摩",
+      "LINE預約",
+      "指壓",
+      "足部按摩"
+    ],
+    "communityReview": "社群推薦提到預約方便、偏運動按摩取向，按腳與身體皆可選擇。",
+    "reviewSourceLabel": "社群推薦摘要",
+    "bookingUrl": "https://mingyi.tw/booking"
   },
   {
     "name": "明易足體按摩 安和館",
@@ -1529,7 +1746,16 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "運動按摩",
+      "LINE預約",
+      "指壓",
+      "足部按摩"
+    ],
+    "communityReview": "社群推薦提到預約方便、偏運動按摩取向，按腳與身體皆可選擇。",
+    "reviewSourceLabel": "社群推薦摘要",
+    "bookingUrl": "https://mingyi.tw/booking"
   },
   {
     "name": "明易足體按摩 士中館",
@@ -1549,6 +1775,15 @@
     "googleRating": null,
     "googleReviewCount": null,
     "googleSource": "",
-    "googleChecked": ""
+    "googleChecked": "",
+    "tags": [
+      "運動按摩",
+      "LINE預約",
+      "指壓",
+      "足部按摩"
+    ],
+    "communityReview": "社群推薦提到預約方便、偏運動按摩取向，按腳與身體皆可選擇。",
+    "reviewSourceLabel": "社群推薦摘要",
+    "bookingUrl": "https://mingyi.tw/booking"
   }
 ]

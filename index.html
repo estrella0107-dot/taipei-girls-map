@@ -14,10 +14,12 @@ h1{font-family:Georgia,"Noto Serif TC",serif;font-size:clamp(28px,5vw,54px);font
 .controls{display:grid;grid-template-columns:2fr 1fr auto;gap:10px;margin:22px 0}.search,select{width:100%;padding:15px 16px;border:1px solid var(--line);border-radius:18px;background:#fff;color:#333;font-size:15px;outline:none}.searchBtn{padding:15px 22px;border:0;border-radius:18px;background:#333;color:#fff;font-size:15px;cursor:pointer;white-space:nowrap}
 .chips{display:flex;gap:8px;overflow:auto;padding-bottom:8px}.chip{border:1px solid #c9c5be;background:transparent;border-radius:999px;padding:9px 15px;white-space:nowrap;cursor:pointer}.chip.active{background:#333;color:white;border-color:#333}
 .stats{display:flex;gap:18px;color:#777;font-size:12px;margin:18px 0 26px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.card{background:rgba(255,255,255,.86);border:1px solid rgba(190,190,190,.55);border-radius:24px;padding:22px;box-shadow:0 8px 30px rgba(80,75,65,.05)}
-.top{display:flex;justify-content:space-between;gap:12px}.num{font:12px Georgia;color:#aaa}.card h2{font-size:19px;margin:8px 0 6px}.loc{font-size:13px;color:#777}.tags{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0}.tag{font-size:11px;padding:6px 9px;border-radius:999px;background:#efede8;border:1px solid #ddd9d1}
-.socialPreview{height:170px;border-radius:16px;margin:-6px -6px 16px;overflow:hidden;background:linear-gradient(135deg,#eee9e1,#d9dadd);display:flex;align-items:center;justify-content:center;color:#777;font-size:12px}.socialPreview img{width:100%;height:100%;object-fit:cover}.community{height:170px;border-radius:16px;margin:-6px -6px 16px;padding:16px;background:linear-gradient(135deg,#eee9e1,#d9dadd);display:flex;flex-direction:column;justify-content:center;color:#555}.communityTitle{font:11px Georgia,serif;letter-spacing:2px;color:#777;margin-bottom:10px}.reviewLine{font-size:13px;line-height:1.7}.reviewLinks{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.reviewLinks a{font-size:11px;color:#555;text-decoration:none;border-bottom:1px solid #aaa;padding-bottom:2px}.info{font-size:13px;line-height:1.7;color:#555}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:18px}.btn{display:inline-block;text-decoration:none;color:#333;border:1px solid #c8c8c8;background:#fafafa;border-radius:12px;padding:9px 11px;font-size:12px}.btn.primary{background:#d9dadd;border-color:#d9dadd}.disabled{opacity:.35;pointer-events:none}
-footer{padding:50px 0;color:#888;font-size:12px;line-height:1.7}.silver{color:#999}
+.card{background:rgba(255,255,255,.88);border:1px solid rgba(190,190,190,.55);border-radius:24px;padding:22px;box-shadow:0 8px 30px rgba(80,75,65,.05)}
+.top{display:flex;justify-content:space-between;gap:12px}.num{font:12px Georgia;color:#aaa}.card h2{font-size:19px;margin:8px 0 6px}.loc{font-size:13px;color:#777}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0}.tag{font-size:11px;padding:6px 9px;border-radius:999px;background:#efede8;border:1px solid #ddd9d1}.vibe{background:#fff;border-color:#cfcac1}
+.community{border-radius:16px;margin:0 0 16px;padding:16px;background:linear-gradient(135deg,#eee9e1,#e2e2e1);color:#555}.communityTitle{font:11px Georgia,serif;letter-spacing:2px;color:#777;margin-bottom:10px}.reviewLine{font-size:13px;line-height:1.7}.source{font-size:11px;color:#888;margin-top:8px}
+.info{font-size:13px;line-height:1.7;color:#555}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:18px}.btn{display:inline-block;text-decoration:none;color:#333;border:1px solid #c8c8c8;background:#fafafa;border-radius:12px;padding:9px 11px;font-size:12px}.btn.primary{background:#d9dadd;border-color:#d9dadd}.btn.book{background:#333;color:#fff;border-color:#333}.disabled{opacity:.35;pointer-events:none}.silver{color:#999}
+footer{padding:50px 0;color:#888;font-size:12px;line-height:1.7}
 @media(max-width:700px){.heroVisual{margin:14px 12px 0;height:285px;border-radius:24px}.heroVisual img{object-position:50% 15%}.wrap{padding:17px}.grid{grid-template-columns:1fr}.controls{grid-template-columns:1fr}.hero{padding-top:34px}.brand{align-items:start;flex-direction:column}.card{border-radius:20px}}
 </style>
 </head>
@@ -26,24 +28,32 @@ footer{padding:50px 0;color:#888;font-size:12px;line-height:1.7}.silver{color:#9
 <section class="heroVisual"><img src="hero-cat-girl.png" alt="一隻巨大的手繪貓咪趴著睡覺，旁邊靠著一位小女孩"></section>
 <main class="wrap">
 <section class="hero"><div class="eyebrow">PRIVATE STUDIOS / BEAUTY & WELLNESS</div><p>把散落在城市裡的女子私藏工作室，放回一張好找的地圖。按摩、清粉刺、做臉、洗髮、頭皮SPA、命理諮詢，一次收藏。</p></section>
-<div class="controls"><input id="q" class="search" placeholder="搜尋店名、區域、服務…"><select id="city"><option value="">台北＋新北</option><option>台北市</option><option>新北市</option></select><button id="searchBtn" class="searchBtn">搜尋</button></div>
+<div class="controls"><input id="q" class="search" placeholder="搜尋店名、區域、服務、口碑標籤…"><select id="city"><option value="">台北＋新北</option><option>台北市</option><option>新北市</option></select><button id="searchBtn" class="searchBtn">搜尋</button></div>
 <div class="chips" id="chips"><button class="chip active" data-cat="">全部</button><button class="chip" data-cat="按摩">按摩</button><button class="chip" data-cat="清粉刺">清粉刺</button><button class="chip" data-cat="做臉">做臉</button><button class="chip" data-cat="洗髮">洗髮</button><button class="chip" data-cat="頭皮SPA">頭皮SPA</button><button class="chip" data-cat="命理諮詢">命理諮詢</button></div>
 <div class="stats"><span id="count"></span><span>公開商業資訊</span><span>資料需定期複核</span></div>
 <section id="grid" class="grid"></section>
-<footer>台北女子地圖整理店家自行公開的商業資訊，不代表推薦或背書。電話、地址、營業狀態與社群帳號可能變動，預約前請再次向店家確認。若你是店家並希望更新或移除資料，正式上線版應提供「店家認領／修改／下架」入口。</footer>
+<footer>台北女子地圖整理店家自行公開的商業資訊與可辨識來源的社群推薦摘要，不代表推薦或背書。電話、地址、營業狀態與社群帳號可能變動，預約前請再次向店家確認。</footer>
 </main>
 <script>
-let data=[], cat="";
-const esc=s=>(s||"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
-function social(label,url){return url?`<a class="btn" target="_blank" rel="noopener" href="${esc(url)}">${label}</a>`:`<span class="btn disabled">${label} 待補</span>`}
+let data=[],cat="";
+const esc=s=>String(s||"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+function btn(label,url,cls=""){return url?`<a class="btn ${cls}" target="_blank" rel="noopener" href="${esc(url)}">${label}</a>`:""}
 function render(){
- const q=document.querySelector("#q").value.trim().toLowerCase(), city=document.querySelector("#city").value;
+ const q=document.querySelector("#q").value.trim().toLowerCase(),city=document.querySelector("#city").value;
  const rows=data.filter(x=>(!city||x.city===city)&&(!cat||x.category.includes(cat))&&(!q||JSON.stringify(x).toLowerCase().includes(q)));
  document.querySelector("#count").textContent=`${rows.length} 間工作室`;
- document.querySelector("#grid").innerHTML=rows.map((x,i)=>`<article class="card">${x.social_image?`<div class="socialPreview"><img src="${esc(x.social_image)}" alt="${esc(x.name)} 社群貼文首圖"></div>`:`<div class="community"><div class="communityTitle">COMMUNITY REVIEWS</div><div class="reviewLine">${Number.isFinite(x.googleRating)&&Number.isFinite(x.googleReviewCount)&&x.googleReviewCount>0?`★ ${x.googleRating.toFixed(1)} ・ ${x.googleReviewCount} 則 Google 評論`:"尚無可驗證評分"}</div>${x.googleSource?`<div class="reviewLine silver">來源：Google Maps${x.googleChecked?` ・ 確認 ${esc(x.googleChecked)}`:""}</div>`:""}<div class="reviewLinks">${x.instagram?`<a target="_blank" rel="noopener" href="${esc(x.instagram)}">查看社群口碑</a>`:""}${x.threads?`<a target="_blank" rel="noopener" href="${esc(x.threads)}">查看討論</a>`:""}</div></div>`}<div class="top"><div><div class="num">0${i+1}</div><h2>${esc(x.name)}</h2><div class="loc">${esc(x.city)} · ${esc(x.district)}</div></div></div><div class="tags">${x.category.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div><div class="info">${esc(x.note)}<br>${esc(x.address)}<br>${x.phone?`TEL ${esc(x.phone)}`:"電話待補"}<br><span class="silver">資料確認 ${esc(x.verified)}</span></div><div class="actions"><a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(x.address)}">地圖</a>${x.phone?`<a class="btn" href="tel:${x.phone.replace(/[^\d+]/g,"")}">電話</a>`:""}${social("LINE",x.line)}${x.instagram?`<a class="btn" target="_blank" rel="noopener" href="${esc(x.instagram)}">查看社群口碑</a>`:""}${x.threads?`<a class="btn" target="_blank" rel="noopener" href="${esc(x.threads)}">查看討論</a>`:""}${x.sourceUrl?`<a class="btn" target="_blank" rel="noopener" href="${esc(x.sourceUrl)}">官方資訊</a>`:""}</div></article>`).join("");
+ document.querySelector("#grid").innerHTML=rows.map((x,i)=>`<article class="card">
+ <div class="top"><div><div class="num">${String(i+1).padStart(2,"0")}</div><h2>${esc(x.name)}</h2><div class="loc">📍 ${esc(x.city)} · ${esc(x.district)}</div></div></div>
+ <div class="tags">${x.category.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}${(x.tags||[]).map(t=>`<span class="tag vibe">#${esc(t)}</span>`).join("")}</div>
+ <div class="community"><div class="communityTitle">COMMUNITY REVIEWS / 女子口碑</div>
+ ${x.communityReview?`<div class="reviewLine">「${esc(x.communityReview)}」</div><div class="source">${esc(x.reviewSourceLabel||"社群推薦摘要")}</div>`:
+ Number.isFinite(x.googleRating)&&Number.isFinite(x.googleReviewCount)&&x.googleReviewCount>0?`<div class="reviewLine">★ ${x.googleRating.toFixed(1)} ・ ${x.googleReviewCount} 則 Google 評論</div>${x.googleChecked?`<div class="source">確認 ${esc(x.googleChecked)}</div>`:""}`:
+ `<div class="reviewLine">尚無可驗證女子口碑</div>`}</div>
+ <div class="info">${esc(x.note)}<br>${esc(x.address)}<br>${x.phone?`TEL ${esc(x.phone)}`:"電話待補"}<br><span class="silver">資料確認 ${esc(x.verified)}</span></div>
+ <div class="actions">${btn("立即預約",x.bookingUrl,"book")}<a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(x.address)}">看地圖</a>${x.phone?`<a class="btn" href="tel:${x.phone.replace(/[^\d+]/g,"")}">電話</a>`:""}${btn("LINE",x.line)}${btn("Instagram",x.instagram)}${btn("Threads",x.threads)}${btn("官方資訊",x.sourceUrl)}</div>
+ </article>`).join("");
 }
-fetch("data.json").then(r=>r.json()).then(x=>{data=x;render()}).catch(()=>{document.querySelector("#grid").innerHTML="<p>請透過本機伺服器或部署平台開啟此 App。</p>"});
+fetch("data.json").then(r=>r.json()).then(x=>{data=x;render()}).catch(()=>document.querySelector("#grid").innerHTML="<p>資料載入失敗，請重新整理。</p>");
 document.querySelector("#q").addEventListener("keydown",e=>{if(e.key==="Enter")render()});document.querySelector("#searchBtn").addEventListener("click",render);document.querySelector("#city").addEventListener("change",render);
-document.querySelector("#chips").addEventListener("click",e=>{if(!e.target.dataset.cat&&e.target.dataset.cat!=="")return;cat=e.target.dataset.cat;document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));e.target.classList.add("active");render()});
-</script>
-</body></html>
+document.querySelector("#chips").addEventListener("click",e=>{if(!("cat" in e.target.dataset))return;cat=e.target.dataset.cat;document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));e.target.classList.add("active");render()});
+</script></body></html>
