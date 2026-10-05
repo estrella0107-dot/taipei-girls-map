@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>台北女子地圖｜評價管理</title>
+<style>
+:root{--cream:#fbf5ec;--paper:#fffdfa;--ink:#292421;--muted:#817a74;--line:#eadfd5;--pink:#ed5672;--rose:#fff0f2;--green:#44765c;--red:#a84e5d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Segoe UI",sans-serif}
+.wrap{max-width:760px;margin:auto;padding:18px 14px}
+header{background:rgba(255,253,250,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.logo{font-family:Georgia,"Noto Serif TC",serif;font-size:20px}.logo small{display:block;font:11px sans-serif;color:var(--muted);margin-top:3px}
+button,input{font:inherit}.btn{border:1px solid #ef8da0;background:#fff;color:#d94c67;border-radius:11px;padding:10px 13px;cursor:pointer}.btn.primary{background:var(--pink);color:#fff;border-color:var(--pink)}
+.panel,.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 7px 24px rgba(80,60,45,.045)}
+.login{max-width:440px;margin:50px auto}.login h1{font-family:Georgia,"Noto Serif TC",serif;margin:0 0 6px}.sub{color:var(--muted);font-size:13px;line-height:1.6}
+label{display:block;font-size:12px;color:#6f6761;margin:14px 0 5px}input{width:100%;padding:12px 13px;border:1px solid var(--line);border-radius:11px;background:#fff}
+.tabs{display:flex;gap:7px;overflow:auto;margin:16px 0}.tab{white-space:nowrap;border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 13px;cursor:pointer}.tab.active{background:var(--rose);border-color:#ef9bac;color:#c94d64}
+.summary{font-size:13px;color:var(--muted);margin:8px 2px 13px}.list{display:grid;gap:11px}.card h2{font-size:18px;margin:0 0 7px}.meta{font-size:12px;color:var(--muted)}.stars{color:var(--pink);letter-spacing:1px;font-size:19px;margin:9px 0}.tags{display:flex;gap:5px;flex-wrap:wrap}.tag{font-size:11px;padding:5px 8px;border-radius:999px;background:var(--rose);border:1px solid #f0d5dc;color:#985866}.text{background:#faf6f1;border-radius:10px;padding:10px;margin:10px 0;line-height:1.55;font-size:14px}.actions{display:flex;gap:8px;margin-top:12px}.approve{flex:1;background:var(--green);color:#fff;border:0;border-radius:11px;padding:11px}.reject{flex:1;background:#fff;color:var(--red);border:1px solid #d9a6ae;border-radius:11px;padding:11px}.empty{text-align:center;padding:42px 16px;color:var(--muted)}
+.error{color:#a94454;font-size:12px;margin-top:9px}.hidden{display:none!important}
+@media(max-width:520px){.logo{font-size:18px}.wrap{padding:14px 12px}.card{padding:14px}}
+</style>
+</head>
+<body>
+<header><div class="wrap head"><div class="logo">🐱 台北女子地圖<small>評價管理 Admin V1</small></div><button id="logout" class="btn hidden">登出</button></div></header>
+
+<main class="wrap">
+<section id="loginPanel" class="panel login">
+<h1>管理員登入</h1>
+<div class="sub">登入後可審核女子口碑。只有具管理權限的帳號能讀取待審核評價與變更狀態。</div>
+<label for="email">Email</label><input id="email" type="email" autocomplete="username" placeholder="管理員 Email">
+<label for="password">密碼</label><input id="password" type="password" autocomplete="current-password" placeholder="密碼">
+<button id="login" class="btn primary" style="width:100%;margin-top:14px">登入</button>
+<div id="loginError" class="error"></div>
+</section>
+
+<section id="adminPanel" class="hidden">
+<div class="tabs">
+<button class="tab active" data-status="pending">待審核 <span id="pendingCount"></span></button>
+<button class="tab" data-status="approved">已通過</button>
+<button class="tab" data-status="rejected">已拒絕</button>
+</div>
+<div id="summary" class="summary">讀取中…</div>
+<div id="list" class="list"></div>
+</section>
+</main>
+
+<script>
+const SUPABASE_URL="https://chbpmyetehkrtwcxeyza.supabase.co";
+const SUPABASE_KEY="sb_publishable_Y0azh-7_KR8td0aTTqkJ4A_x724kQYj";
+const ADMIN_UID="6bcde687-6f7d-4654-b351-cb1c5242c591";
+let accessToken="",refreshToken="",currentStatus="pending",reviews=[];
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+function authHeaders(){return {"apikey":SUPABASE_KEY,"Authorization":"Bearer "+accessToken,"Content-Type":"application/json"}}
+function saveSession(s){accessToken=s.access_token||"";refreshToken=s.refresh_token||"";localStorage.setItem("tgm_admin_session",JSON.stringify({access_token:accessToken,refresh_token:refreshToken,expires_at:s.expires_at||0,user:s.user||null}))}
+function clearSession(){accessToken="";refreshToken="";localStorage.removeItem("tgm_admin_session")}
+async function login(){
+ $("loginError").textContent=""; $("login").disabled=true;$("login").textContent="登入中…";
+ try{
+  const r=await fetch(SUPABASE_URL+"/auth/v1/token?grant_type=password",{method:"POST",headers:{"apikey":SUPABASE_KEY,"Content-Type":"application/json"},body:JSON.stringify({email:$("email").value.trim(),password:$("password").value})});
+  const s=await r.json(); if(!r.ok)throw new Error(s.error_description||s.msg||"登入失敗");
+  if(s.user?.id!==ADMIN_UID)throw new Error("此帳號沒有管理權限");
+  saveSession(s); showAdmin(); await loadReviews();
+ }catch(e){clearSession();$("loginError").textContent=e.message||"登入失敗";}
+ finally{$("login").disabled=false;$("login").textContent="登入"}
+}
+async function refreshSession(){
+ if(!refreshToken)return false;
+ try{
+  const r=await fetch(SUPABASE_URL+"/auth/v1/token?grant_type=refresh_token",{method:"POST",headers:{"apikey":SUPABASE_KEY,"Content-Type":"application/json"},body:JSON.stringify({refresh_token:refreshToken})});
+  const s=await r.json();if(!r.ok||s.user?.id!==ADMIN_UID)return false;saveSession(s);return true;
+ }catch{return false}
+}
+function showAdmin(){$("loginPanel").classList.add("hidden");$("adminPanel").classList.remove("hidden");$("logout").classList.remove("hidden")}
+function showLogin(){$("adminPanel").classList.add("hidden");$("loginPanel").classList.remove("hidden");$("logout").classList.add("hidden")}
+async function api(path,opts={}){
+ let r=await fetch(SUPABASE_URL+"/rest/v1/"+path,{...opts,headers:{...authHeaders(),...(opts.headers||{})}});
+ if(r.status===401&&await refreshSession())r=await fetch(SUPABASE_URL+"/rest/v1/"+path,{...opts,headers:{...authHeaders(),...(opts.headers||{})}});
+ return r;
+}
+async function loadReviews(){
+ $("summary").textContent="讀取中…";$("list").innerHTML="";
+ const r=await api("reviews?select=id,shop_name,stars,tags,review_text,status,created_at&status=eq."+encodeURIComponent(currentStatus)+"&order=created_at.desc");
+ if(!r.ok){$("summary").textContent="無法讀取評價";$("list").innerHTML='<div class="panel error">請重新登入後再試。</div>';return}
+ reviews=await r.json();render();
+ if(currentStatus!=="pending"){
+  const pr=await api("reviews?select=id&status=eq.pending");
+  if(pr.ok){const p=await pr.json();$("pendingCount").textContent=p.length?`(${p.length})`:"";}
+ }else $("pendingCount").textContent=reviews.length?`(${reviews.length})`:"";
+}
+function render(){
+ $("summary").textContent=`${currentStatus==="pending"?"待審核":currentStatus==="approved"?"已通過":"已拒絕"}：${reviews.length} 則`;
+ if(!reviews.length){$("list").innerHTML='<div class="panel empty">目前沒有這個狀態的評價 ✨</div>';return}
+ $("list").innerHTML=reviews.map(r=>`<article class="card">
+ <h2>${esc(r.shop_name)}</h2>
+ <div class="meta">#${r.id} ・ ${new Date(r.created_at).toLocaleString("zh-TW")}</div>
+ <div class="stars">${"★".repeat(r.stars)}${"☆".repeat(5-r.stars)}</div>
+ ${r.tags?.length?`<div class="tags">${r.tags.map(t=>`<span class="tag">#${esc(t)}</span>`).join("")}</div>`:""}
+ ${r.review_text?`<div class="text">「${esc(r.review_text)}」</div>`:'<div class="text" style="color:#8b837d">沒有文字心得</div>'}
+ ${currentStatus==="pending"?`<div class="actions"><button class="approve" data-id="${r.id}" data-action="approved">✓ 通過</button><button class="reject" data-id="${r.id}" data-action="rejected">✕ 拒絕</button></div>`:""}
+ </article>`).join("");
+}
+async function moderate(id,status,btn){
+ if(!confirm(status==="approved"?"確定通過這則評價？":"確定拒絕這則評價？"))return;
+ const old=btn.textContent;btn.disabled=true;btn.textContent="處理中…";
+ const r=await api("reviews?id=eq."+id,{method:"PATCH",headers:{"Prefer":"return=minimal"},body:JSON.stringify({status})});
+ if(!r.ok){btn.disabled=false;btn.textContent=old;alert("更新失敗，請稍後再試。");return}
+ await loadReviews();
+}
+$("login").addEventListener("click",login);
+$("password").addEventListener("keydown",e=>{if(e.key==="Enter")login()});
+$("logout").addEventListener("click",()=>{clearSession();showLogin()});
+document.querySelector(".tabs").addEventListener("click",e=>{const b=e.target.closest(".tab");if(!b)return;currentStatus=b.dataset.status;document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===b));loadReviews()});
+$("list").addEventListener("click",e=>{const b=e.target.closest("[data-action]");if(b)moderate(Number(b.dataset.id),b.dataset.action,b)});
+(async()=>{
+ try{
+  const s=JSON.parse(localStorage.getItem("tgm_admin_session")||"null");
+  if(s){accessToken=s.access_token||"";refreshToken=s.refresh_token||"";if(s.user?.id===ADMIN_UID&&(s.expires_at*1000>Date.now()+30000||await refreshSession())){showAdmin();await loadReviews();return}}
+ }catch{}
+ clearSession();showLogin();
+})();
+</script>
+</body></html>
