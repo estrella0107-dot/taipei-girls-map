@@ -99,11 +99,15 @@ function render(){
  <div class="stars">${"★".repeat(r.stars)}${"☆".repeat(5-r.stars)}</div>
  ${r.tags?.length?`<div class="tags">${r.tags.map(t=>`<span class="tag">#${esc(t)}</span>`).join("")}</div>`:""}
  ${r.review_text?`<div class="text">「${esc(r.review_text)}」</div>`:'<div class="text" style="color:#8b837d">沒有文字心得</div>'}
- ${currentStatus==="pending"?`<div class="actions"><button class="approve" data-id="${r.id}" data-action="approved">✓ 通過</button><button class="reject" data-id="${r.id}" data-action="rejected">✕ 拒絕</button></div>`:""}
+ ${currentStatus==="pending"
+ ? `<div class="actions"><button class="approve" data-id="${r.id}" data-action="approved">✓ 通過</button><button class="reject" data-id="${r.id}" data-action="rejected">✕ 拒絕</button></div>`
+ : currentStatus==="approved"
+ ? `<div class="actions"><button class="reject" data-id="${r.id}" data-action="rejected">✕ 改為拒絕</button></div>`
+ : `<div class="actions"><button class="approve" data-id="${r.id}" data-action="approved">✓ 重新通過</button></div>`}
  </article>`).join("");
 }
 async function moderate(id,status,btn){
- if(!confirm(status==="approved"?"確定通過這則評價？":"確定拒絕這則評價？"))return;
+ if(!confirm(status==="approved"?(currentStatus==="rejected"?"確定重新通過這則評價？":"確定通過這則評價？"):(currentStatus==="approved"?"確定將這則已通過評價改為拒絕？":"確定拒絕這則評價？")))return;
  const old=btn.textContent;btn.disabled=true;btn.textContent="處理中…";
  const r=await api("reviews?id=eq."+id,{method:"PATCH",headers:{"Prefer":"return=minimal"},body:JSON.stringify({status})});
  if(!r.ok){btn.disabled=false;btn.textContent=old;alert("更新失敗，請稍後再試。");return}
