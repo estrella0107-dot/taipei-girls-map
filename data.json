@@ -81,7 +81,11 @@
     "instagram": "",
     "threads": "",
     "note": "美容・清粉刺・精油按摩",
-    "verified": "2026-10-04"
+    "verified": "2026-10-04",
+    "googleRating": 5.0,
+    "googleReviewCount": 78,
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "禾晞 HEXI 肌膚層序管理",
@@ -97,7 +101,11 @@
     "instagram": "",
     "threads": "",
     "note": "肌膚管理・毛孔淨化",
-    "verified": "2026-10-04"
+    "verified": "2026-10-04",
+    "googleRating": 5.0,
+    "googleReviewCount": 118,
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "雨田個人按摩工作室",
@@ -328,7 +336,11 @@
     "instagram": "",
     "threads": "",
     "note": "頭皮養護・洗髮・頭療・臉部美容",
-    "verified": "2026-10-04"
+    "verified": "2026-10-04",
+    "googleRating": 4.9,
+    "googleReviewCount": 40,
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "MAY SPA 越式洗髮 養生按摩",
@@ -382,10 +394,10 @@
     "note": "個人工作室・塔羅占卜與芳療服務，採預約制",
     "verified": "2026-10-04",
     "sourceUrl": "https://www.claudia-studio.com/services",
-    "googleRating": null,
-    "googleReviewCount": null,
-    "googleSource": "",
-    "googleChecked": ""
+    "googleRating": 5.0,
+    "googleReviewCount": 9,
+    "googleSource": "Google Maps / current local business listing",
+    "googleChecked": "2026-10-05"
   },
   {
     "name": "空白心靈空間",
@@ -402,10 +414,10 @@
     "note": "個人塔羅占卜與晤談・採預約制",
     "verified": "2026-10-04",
     "sourceUrl": "https://www.blanc-tarot.com/",
-    "googleRating": null,
-    "googleReviewCount": null,
-    "googleSource": "",
-    "googleChecked": ""
+    "googleRating": 5.0,
+    "googleReviewCount": 26,
+    "googleSource": "Google Maps / current local business listing",
+    "googleChecked": "2026-10-05"
   },
   {
     "name": "Mini Many 療癒小宇宙",
@@ -490,7 +502,8 @@
     "verified": "2026-10-04",
     "googleRating": 5.0,
     "googleReviewCount": 299,
-    "googleChecked": "2026-10-04"
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "妤美人spa館",
@@ -526,7 +539,8 @@
     "verified": "2026-10-04",
     "googleRating": 5.0,
     "googleReviewCount": 7,
-    "googleChecked": "2026-10-04"
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "許大方五術命理風水",
@@ -559,7 +573,8 @@
     "verified": "2026-10-04",
     "googleRating": 4.8,
     "googleReviewCount": 5,
-    "googleChecked": "2026-10-04"
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "初韻美學館",
@@ -592,7 +607,8 @@
     "verified": "2026-10-04",
     "googleRating": 5.0,
     "googleReviewCount": 178,
-    "googleChecked": "2026-10-04"
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "光光養生按摩個人工作室",
@@ -661,7 +677,8 @@
     "verified": "2026-10-04",
     "googleRating": 5.0,
     "googleReviewCount": 23,
-    "googleChecked": "2026-10-04"
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "文化PLUS美學",
@@ -731,7 +748,8 @@
     "verified": "2026-10-04",
     "googleRating": 5.0,
     "googleReviewCount": 5,
-    "googleChecked": "2026-10-04"
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "V Massage女性專屬按摩工作室",
@@ -749,7 +767,8 @@
     "verified": "2026-10-04",
     "googleRating": 5.0,
     "googleReviewCount": 33,
-    "googleChecked": "2026-10-04"
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "歐吉塔羅占卜工作室",
@@ -767,7 +786,8 @@
     "verified": "2026-10-04",
     "googleRating": 5.0,
     "googleReviewCount": 1,
-    "googleChecked": "2026-10-04"
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "陳楓螢 紫微斗數命理諮詢 台北分館",
@@ -801,7 +821,8 @@
     "verified": "2026-10-04",
     "googleRating": 5.0,
     "googleReviewCount": 57,
-    "googleChecked": "2026-10-04"
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "Yeppeo.studio 韓式皮膚管理",
@@ -850,7 +871,8 @@
     "verified": "2026-10-04",
     "googleRating": 4.9,
     "googleReviewCount": 48,
-    "googleChecked": "2026-10-04"
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "台北做臉／慧宇美學工作室",
@@ -901,7 +923,8 @@
     "verified": "2026-10-04",
     "googleRating": 5.0,
     "googleReviewCount": 32,
-    "googleChecked": "2026-10-04"
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "狐狸小姐占星工作室",
@@ -919,7 +942,8 @@
     "verified": "2026-10-04",
     "googleRating": 5.0,
     "googleReviewCount": 11,
-    "googleChecked": "2026-10-04"
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "悠然 臉部放鬆護膚・撥筋工作室",
@@ -953,7 +977,8 @@
     "verified": "2026-10-04",
     "googleRating": 4.9,
     "googleReviewCount": 45,
-    "googleChecked": "2026-10-04"
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "JD時尚美學工作室",
@@ -972,7 +997,8 @@
     "verified": "2026-10-04",
     "googleRating": 5.0,
     "googleReviewCount": 52,
-    "googleChecked": "2026-10-04"
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "獨愛美學",
@@ -1023,7 +1049,8 @@
     "verified": "2026-10-04",
     "googleRating": 5.0,
     "googleReviewCount": 16,
-    "googleChecked": "2026-10-04"
+    "googleChecked": "2026-10-05",
+    "googleSource": "Google Maps / current local business listing"
   },
   {
     "name": "只想洗髮 新莊店",
@@ -1152,10 +1179,10 @@
     "note": "夜間純洗髮專門店・營業時間 18:00–02:00・無推銷、不儲值",
     "verified": "2026-10-05",
     "sourceUrl": "https://www.seefa.com.tw/locations/",
-    "googleRating": null,
-    "googleReviewCount": null,
-    "googleSource": "",
-    "googleChecked": "",
+    "googleRating": 4.9,
+    "googleReviewCount": 281,
+    "googleSource": "Google Maps / current local business listing",
+    "googleChecked": "2026-10-05",
     "tags": [
       "只洗髮",
       "晚上營業",
@@ -1180,10 +1207,10 @@
     "note": "夜間純洗髮專門店・營業時間 18:00–02:00・無推銷、不儲值",
     "verified": "2026-10-05",
     "sourceUrl": "https://www.seefa.com.tw/locations/",
-    "googleRating": null,
-    "googleReviewCount": null,
-    "googleSource": "",
-    "googleChecked": "",
+    "googleRating": 4.8,
+    "googleReviewCount": 201,
+    "googleSource": "Google Maps / current local business listing",
+    "googleChecked": "2026-10-05",
     "tags": [
       "只洗髮",
       "晚上營業",
@@ -1348,10 +1375,10 @@
     "note": "夜間純洗髮專門店・營業時間 18:00–02:00・無推銷、不儲值",
     "verified": "2026-10-05",
     "sourceUrl": "https://www.seefa.com.tw/locations/",
-    "googleRating": null,
-    "googleReviewCount": null,
-    "googleSource": "",
-    "googleChecked": "",
+    "googleRating": 4.9,
+    "googleReviewCount": 34,
+    "googleSource": "Google Maps / current local business listing",
+    "googleChecked": "2026-10-05",
     "tags": [
       "只洗髮",
       "晚上營業",
@@ -1544,10 +1571,10 @@
     "note": "夜間純洗髮專門店・營業時間 18:00–02:00・無推銷、不儲值",
     "verified": "2026-10-05",
     "sourceUrl": "https://www.seefa.com.tw/locations/",
-    "googleRating": null,
-    "googleReviewCount": null,
-    "googleSource": "",
-    "googleChecked": "",
+    "googleRating": 4.9,
+    "googleReviewCount": 91,
+    "googleSource": "Google Maps / current local business listing",
+    "googleChecked": "2026-10-05",
     "tags": [
       "只洗髮",
       "晚上營業",
@@ -1572,10 +1599,10 @@
     "note": "夜間純洗髮專門店・營業時間 18:00–02:00・無推銷、不儲值",
     "verified": "2026-10-05",
     "sourceUrl": "https://www.seefa.com.tw/locations/",
-    "googleRating": null,
-    "googleReviewCount": null,
-    "googleSource": "",
-    "googleChecked": "",
+    "googleRating": 4.0,
+    "googleReviewCount": 4,
+    "googleSource": "Google Maps / current local business listing",
+    "googleChecked": "2026-10-05",
     "tags": [
       "只洗髮",
       "晚上營業",
@@ -1656,10 +1683,10 @@
     "note": "運動按摩取向・足部與身體按摩；社群推薦提及 LINE 預約方便、指壓可不換衣。實際服務與價格請以店家公告為準。",
     "verified": "2026-10-05",
     "sourceUrl": "https://mingyi.tw/locations",
-    "googleRating": null,
-    "googleReviewCount": null,
-    "googleSource": "",
-    "googleChecked": "",
+    "googleRating": 4.5,
+    "googleReviewCount": 823,
+    "googleSource": "Google Maps / current local business listing",
+    "googleChecked": "2026-10-05",
     "tags": [
       "運動按摩",
       "LINE預約",
@@ -1743,10 +1770,10 @@
     "note": "運動按摩取向・足部與身體按摩；社群推薦提及 LINE 預約方便、指壓可不換衣。實際服務與價格請以店家公告為準。",
     "verified": "2026-10-05",
     "sourceUrl": "https://mingyi.tw/locations",
-    "googleRating": null,
-    "googleReviewCount": null,
-    "googleSource": "",
-    "googleChecked": "",
+    "googleRating": 4.9,
+    "googleReviewCount": 405,
+    "googleSource": "Google Maps / current local business listing",
+    "googleChecked": "2026-10-05",
     "tags": [
       "運動按摩",
       "LINE預約",
