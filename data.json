@@ -1887,5 +1887,102 @@
     "facebook": "",
     "note": "新店美甲沙龍",
     "verified": "2026-10-06"
+  },
+  {
+    "name": "Lalaland nail Salon｜正和店",
+    "category": [
+      "美甲"
+    ],
+    "city": "台北市",
+    "district": "信義區",
+    "address": "台北市信義區光復南路415巷99號",
+    "phone": "",
+    "line": "",
+    "instagram": "https://www.instagram.com/lalaland._nail",
+    "threads": "",
+    "facebook": "",
+    "note": "Lalaland 美甲・手足保養；分店資訊依 Google 商家與使用者提供官方 Instagram 整理。",
+    "verified": "2026-10-06",
+    "googleRating": 4.7,
+    "googleReviewCount": 166,
+    "googleSource": "Google Maps（使用者提供 2026-10-06 截圖）",
+    "googleChecked": "2026-10-06",
+    "tags": [
+      "美甲",
+      "手足保養"
+    ]
+  },
+  {
+    "name": "Lalaland nail Salon｜廣居店",
+    "category": [
+      "美甲"
+    ],
+    "city": "台北市",
+    "district": "信義區",
+    "address": "台北市信義區忠孝東路五段372巷29弄13號",
+    "phone": "",
+    "line": "",
+    "instagram": "https://www.instagram.com/lalaland._nail",
+    "threads": "",
+    "facebook": "",
+    "note": "Lalaland 美甲・手足保養；分店資訊依 Google 商家與使用者提供官方 Instagram 整理。",
+    "verified": "2026-10-06",
+    "googleRating": 4.6,
+    "googleReviewCount": 119,
+    "googleSource": "Google Maps（使用者提供 2026-10-06 截圖）",
+    "googleChecked": "2026-10-06",
+    "tags": [
+      "美甲",
+      "手足保養"
+    ]
+  },
+  {
+    "name": "Lalaland Salon｜富民店",
+    "category": [
+      "美甲"
+    ],
+    "city": "台北市",
+    "district": "松山區",
+    "address": "台北市松山區民生東路五段186號2樓",
+    "phone": "",
+    "line": "",
+    "instagram": "https://www.instagram.com/lalaland._nail",
+    "threads": "",
+    "facebook": "",
+    "note": "Lalaland 美甲保養沙龍；分店資訊依 Google 商家與使用者提供官方 Instagram 整理。",
+    "verified": "2026-10-06",
+    "googleRating": 4.7,
+    "googleReviewCount": 125,
+    "googleSource": "Google Maps（使用者提供 2026-10-06 截圖）",
+    "googleChecked": "2026-10-06",
+    "tags": [
+      "美甲",
+      "手足保養"
+    ]
+  },
+  {
+    "name": "ING 美學館",
+    "category": [
+      "美甲"
+    ],
+    "city": "新北市",
+    "district": "新店區",
+    "address": "新北市新店區安康路二段153號2樓",
+    "phone": "02-8666-1991",
+    "line": "",
+    "instagram": "",
+    "threads": "",
+    "facebook": "https://www.facebook.com/share/1CpXSUdpHq/",
+    "note": "美甲・美睫；Google 商家顯示採預約建議，Facebook 連結由使用者提供。",
+    "verified": "2026-10-06",
+    "googleRating": 4.9,
+    "googleReviewCount": 51,
+    "googleSource": "Google Maps / current local business listing",
+    "googleChecked": "2026-10-06",
+    "tags": [
+      "美甲",
+      "美睫",
+      "預約制"
+    ]
   }
 ]
